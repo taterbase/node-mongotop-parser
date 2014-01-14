@@ -1,0 +1,26 @@
+{
+  "name": "mongotop-parser",
+  "version": "1.0.0",
+  "description": "Library for parsing mongotop's output",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/taterbase/node-mongotop-parser.git"
+  },
+  "keywords": [
+    "mongotop",
+    "mongo",
+    "mongodb",
+    "top",
+    "parser"
+  ],
+  "author": "taterbase",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taterbase/node-mongotop-parser/issues"
+  },
+  "homepage": "https://github.com/taterbase/node-mongotop-parser"
+}
