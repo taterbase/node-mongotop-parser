@@ -44,8 +44,8 @@ function Stream(opts) {
 }
 
 Stream.prototype._transform = function(data, encoding, cb) {
-  parse(data).forEach(function(d){
-    this.push(parse(data, {locks: this._locks}))
+  parse(data, {locks: this._locks}).forEach(function(d){
+    this.push(d)
   }, this)
   cb()
 }
