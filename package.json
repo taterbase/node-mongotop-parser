@@ -1,6 +1,6 @@
 {
   "name": "mongotop-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library for parsing mongotop's output",
   "main": "index.js",
   "scripts": {
