@@ -37,6 +37,7 @@ function Stream(opts) {
   opts = opts || {}
   opts.decodeStrings = false
   opts.objectMode = true
+  this._locks = opts.locks ? true : false
 
   Transform.call(this, opts)
 
@@ -44,7 +45,7 @@ function Stream(opts) {
 
 Stream.prototype._transform = function(data, encoding, cb) {
   parse(data).forEach(function(d){
-    this.push(parse(data))
+    this.push(parse(data, {locks: this._locks}))
   }, this)
   cb()
 }
